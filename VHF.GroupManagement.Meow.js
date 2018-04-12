@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name       VHF Group Management
-// @author xadamxk
+// @author Meow
 // @namespace  https://github.com/NekoMajo/VHF-Scripts
 // @version    2.0.4
 // @description  Adds improved group management options for HF leaders.
