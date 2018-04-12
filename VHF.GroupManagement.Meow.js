@@ -1,16 +1,16 @@
 // ==UserScript==
-// @name       HF Group Management
+// @name       VHF Group Management
 // @author xadamxk
-// @namespace  https://github.com/xadamxk/HF-Scripts
+// @namespace  https://github.com/NekoMajo/VHF-Scripts
 // @version    2.0.4
 // @description  Adds improved group management options for HF leaders.
 // @require http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js
 // @match      *://vhackforums.net/*
 // @match      *://vhackforums.net*
 // @copyright  2016+
-// @iconURL https://raw.githubusercontent.com/xadamxk/HF-Userscripts/master/scripticon.jpg
-// @updateURL https://github.com/xadamxk/HF-Userscripts/releases/download/HFGM/Group.Management.Profile.Manager.user.js
-// @downloadURL https://github.com/xadamxk/HF-Userscripts/releases/download/HFGM/Group.Management.Profile.Manager.user.js
+// @iconURL https://github.com/NekoMajo/VHF-Scripts/blob/master/VHFIcon.png?raw=true
+// @updateURL https://github.com/NekoMajo/VHF-Scripts/blob/master/VHF.GroupManagement.Meow.js
+// @downloadURL https://github.com/NekoMajo/VHF-Scripts/blob/master/VHF.GroupManagement.Meow.js
 // @grant       GM_getValue
 // @grant       GM_setValue
 // @grant       GM_deleteValue
@@ -141,13 +141,13 @@ var pb = document.body.innerHTML;
 
 if (pb.indexOf(GNID) > 0) {
      $("strong:contains('Forum Info')").append($('<button class="button" id="rem_g" style="margin-left:20px;">Remove from '+GNID+'</button>'));
-	 $("body").on("click", "#rem_g", function() { rem_g();});
+     $("body").on("click", "#rem_g", function() { rem_g();});
 } else {
 
      $("strong:contains('Forum Info')").append($('<button class="button" id="add_g" style="margin-left:20px;">Add to '+GNID+'</button>'));
-	 $("body").on("click", "#add_g", function() { add_g();});
+     $("body").on("click", "#add_g", function() { add_g();});
 }
-	 });
+     });
 
 }
 
